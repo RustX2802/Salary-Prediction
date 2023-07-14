@@ -1,11 +1,9 @@
 import streamlit as st
-#import pickle
 import joblib
 import numpy as np
 
 def load_model():
     with open('saved_steps.pkl', 'rb') as file:
-        #data = pickle.load(file)
         data = joblib.load(file)
         return data
 
